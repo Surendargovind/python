@@ -42,16 +42,19 @@ smel = check("\nLoss sense of smell ??? :")
 coug = check("\nSevere Cought ??? :")
 breat = check("\n Difficulty in Breathing ??? :")
 
+print("\n----------RESULT-------------")
+
 if age >= 50:
-    print("\npeople greater than 50 age are at highest risk from COVID-19.So please stay safe")
-if temp=="YES" and sor=="YES" and smel=="YES"and coug=="YES" and breat=="YES":
-    print("\nYOURE INFECTED BY COVID-19 VIRUS.PLEASE VISIT NEARBY HOSPITAL")
-if coug=="YES" and breat=="YES":
-    print("\nYou have problem in your heart")
-if sor=="YES" or smel=="YES" or coug=="YES" or breat=="YES":
-    print("\nYou have covid-19 virus symptoms.Please stay isolated")
-if temp=="NO" or coug=="NO":
-    print("\nYou are Normal")
+    print("\npeople greater than 50 age are at highest risk from COVID-19.So please stay safe".upper())
+elif temp=="YES" and sor=="YES" and smel=="YES"and coug=="YES" and breat=="YES":
+    print("\nYOURE INFECTED BY COVID-19 VIRUS.PLEASE VISIT NEARBY HOSPITAL".upper())
+elif sor=="YES" or smel=="YES" or coug=="YES" or breat=="YES" or temp=="YES":
+    print("\nYou have covid-19 virus symptoms.Please stay isolated".upper())
+else:
+    print("\nYou're Normal".upper())
+
+print("\n----------ALERT-------------")
+
 print("""\n\nSTAY HOME.SAVE LIVES ,
 \nHelp stop coronavirus,
 \nSTAYhome,
