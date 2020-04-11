@@ -1,1 +1,1 @@
-Python code feches corona data using Beatiful soup
+Python code feches corona data using Beautiful soup
